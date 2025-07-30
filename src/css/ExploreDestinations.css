@@ -1,0 +1,349 @@
+ .maindiv2 {
+    margin: 50px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .trand-list {
+    position: relative;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .nav-items {
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    outline: none;
+  }
+  
+  .nav-items li {
+    list-style: none;
+  }
+  
+  .nav-items.active {
+    font-weight: bold;
+    color: blueviolet;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: blueviolet;
+    transition: all 0.3s ease;
+  }
+  
+  .trand-list{
+    display: flex;
+  }
+  .nav{
+    list-style: none;
+    gap:30px;
+  }
+  .nav-items{
+    border: none;
+    width: auto;
+    background-color: none;
+
+  }
+  .line{
+    margin-top: -1px;
+    width: 100%;
+    background-color: #aca7a7;
+    height: 2px;
+  }
+  a:hover{
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .locations{
+    width: 100%;
+    position: relative;
+    display: flex;
+  
+  }
+  
+  .small-class{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  .big-img {
+  margin-left: 100px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%; /* Add this */
+  object-fit: cover;
+}
+.multi-img{
+    width: 230px;
+    height: 236px;
+    
+  }
+ 
+
+/* Overlay on big image */
+.imgs .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  right: 0;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Small images container */
+/* Small images container */
+.small-class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+  padding: 10px;
+}
+
+/* Wrapper for each small image */
+.img-wrapper {
+  position: relative;
+  width: 260px;
+  height: 236px;
+}
+
+.multi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Overlay on small image */
+.img-wrapper .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Hover effect */
+.img-wrapper:hover .overlay {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .img-wrapper {
+    width: 45%;
+    height: auto;
+  }
+
+  .multi-img {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .multi-img {
+    height: auto;
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .img-wrapper .overlay {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
+
+/* Wrapper for small images */
+.img-wrapper {
+  position: relative;
+  width: 262px;
+  height: 224px;
+}
+
+.multi-img {
+  flex-wrap: wrap;
+  width: 260px;
+  height: 236px;
+  gap: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Overlay on small image */
+.img-wrapper .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: background 0.3s;
+}
+
+/* Optional hover effect */
+.img-wrapper:hover .overlay {
+  color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .nav-items {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+   .big-img {
+    margin-left: 0;     /* Remove side margin */
+    margin: 20px auto;  /* Center image */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+  .imgs .overlay {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .img-wrapper {
+    width: 50%;
+    height: auto;
+  }
+
+  .img-wrapper .overlay {
+    font-size: 11px;
+    padding: 4px;
+  }
+  .locations{
+    flex-direction: column;
+    background-size: cover;
+  }
+  .maindiv2{
+    margin: 0px;
+    text-align: left;
+  }
+  .trand-list{
+    overflow: hidden;
+  } 
+  .small-class{
+    display: ruby;
+    width: 100%;
+  }
+}
+/* Make category buttons scrollable on small screens */
+@media (max-width: 768px) {
+  .trand-list {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+  }
+
+  .trand-list::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari */
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 10px;
+    min-width: max-content;
+  }
+
+  .nav-items {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+
+  .underline {
+    height: 2px;
+  }
+}
+/* Default Laptop/Desktop (unchanged) */
+.multi-img {
+  width: 230px;
+  height: 236px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* For Tablets (width < 1024px) */
+@media (max-width: 1024px) {
+  .small-class {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .multi-img {
+    width: 200px;
+    height: 210px;
+  }
+}
+
+/* For Mobile (width < 768px) */
+@media (max-width: 768px) {
+  .small-class {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .multi-img {
+    width: 48%;  /* 2 images per row */
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* For Extra Small Mobile (width < 480px) */
+@media (max-width: 480px) {
+  .multi-img {
+    width: 100%; /* 1 image per row */
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain proper ratio */
+  }
+}
+

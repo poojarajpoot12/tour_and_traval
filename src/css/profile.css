@@ -1,0 +1,69 @@
+.profileh1{
+    text-align: center;
+}
+
+.profile-container{
+    margin: auto;
+    width: auto;
+    background-image: url('https://th.bing.com/th/id/OIP.5sZcGKaaTozYowjU7EZ2VgHaEo?rs=1&pid=ImgDetMain');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+     border: none;
+    border-radius: 15px;
+    padding: 50px;
+}
+.profile-card{
+  width: 350px;
+    background-color: rgba(245, 241, 241, 0.5); /* black with 50% opacity */
+    border: none;
+    border-radius: 10px;   
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+.profile-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.bookings{
+    margin: auto;
+    text-align: center; 
+}
+.booking-cards-container {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.booking-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.booking-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .profile-card{
+    width :auto;
+    height: auto;
+  }
+}

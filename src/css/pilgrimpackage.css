@@ -1,0 +1,95 @@
+.package-list-vertical {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.package-card-vertical {
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.package-card-vertical:hover {
+  transform: translateY(-5px);
+}
+
+.package-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.package-content {
+  padding: 15px;
+  margin: 10px;
+}
+
+.package-content h3 {
+  margin: 0 0 10px;
+}
+
+.package-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.description {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.package-content button {
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 12px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.package-content button:hover {
+  background-color: blueviolet;
+}
+.booking-form-modal {
+  /* width: 700px; */
+  position: fixed;
+  color: #fff;
+  top: 50%;
+  left: 35%;
+  /* width: 100%;
+  height: 100%; */
+  background: rgba(0, 0, 0, 0.293);
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+}
+.buttons{
+  justify-content: space-between;
+}
+
+
+/* .booking-form-container {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  height: auto;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+} */
+

@@ -1,0 +1,132 @@
+/* --- Navigation Container --- */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  padding: 10px 20px;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+/* --- Logo --- */
+.logo-img {
+  height: 70px;
+  width: 100px;
+}
+
+/* --- Hamburger (Mobile only) --- */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+/* --- Nav Menu --- */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative; /* needed for dropdown absolute positioning */
+}
+
+/* --- Nav Links --- */
+.nav-links {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  color: blueviolet;
+}
+
+/* --- Login Button --- */
+.loginbtn {
+  background-color: blueviolet;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Dropdown Menu --- */
+.dropdown {
+  position: absolute;
+  top: 60px; /* position below the nav bar */
+  right: 100px; /* adjust according to your nav layout */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+.dropdown ul,
+.navlinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 6px 0;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  color: blueviolet;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 998;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-links {
+    display: block;
+    color: #333;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown {
+    position: relative; /* inside mobile menu */
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 100%;
+  }
+}

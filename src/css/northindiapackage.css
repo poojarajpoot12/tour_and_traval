@@ -1,0 +1,123 @@
+.maincontainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+}
+.img-text{
+    position: absolute;
+    top :50%;
+    right: 25%;
+    left: 30%;
+    color: #fff;
+    font-size: 50px;
+}
+.img-text:hover{
+    color: blueviolet;
+}
+
+.bigcontainer{
+    display: flex;
+    height: auto;
+    margin: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(220, 216, 216);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.textcontainer{
+    width: 60%;
+    padding: 20px;
+    
+}
+.imagecontrainer {
+  width: 40%;
+  padding: 10px;
+}
+
+/* Make the image responsive */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tablet - adjust container width */
+@media (max-width: 768px) {
+  .imagecontrainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile - stack layout */
+@media (max-width: 480px) {
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-width:768px){
+    .bigcontainer{
+        flex-direction: column;
+    }
+    .textcontainer{
+        width: 100%;
+        margin-left: 0px;
+    }.imagecontrainer{
+        width: 100%;
+    }
+}
+@media(max-width:390px){
+     .textcontainer{
+        width: 100%;
+        margin-left: 0px;
+    }.imagecontrainer{
+        width: 100%;
+    }
+}
+.card-div{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+.h2{
+    text-align: center;
+}
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    margin:  50px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+@media(max-width:768px){
+    .card-div{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .booking-form{
+        width: 0%;
+    }
+}
+.titleheading{
+    text-align: center;
+}

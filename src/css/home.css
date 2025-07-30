@@ -1,0 +1,150 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.maindiv {
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.image-container {
+  width: 40%;
+  text-align: left;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 500px;
+  height: 600px;
+}
+
+.slider-text {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  width: 60%;
+  margin: 70px 70px;
+  margin-top: 0px;
+}
+
+.heading {
+  font-size: 60px;
+}
+
+span {
+  color: blueviolet;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-right: 70px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 250px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: blueviolet;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block; /* ✅ default visible */
+}
+
+.controls button:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 768px) {
+  .maindiv {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin: 0px;
+    margin-right: 0%;
+  }
+
+  .content {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    overflow-x: hidden;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+  }
+
+  .slider-container {
+    margin-right: 0px;
+    overflow-x: auto; /* ✅ scroll enabled */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .slider-container::-webkit-scrollbar {
+    display: none; /* optional: hide scrollbar */
+  }
+
+  .slider-track {
+    width: max-content; /* ✅ makes track scrollable */
+    display: flex;
+  }
+
+  .controls button {
+    display: none; /* ✅ hide on small screens */
+  }
+}

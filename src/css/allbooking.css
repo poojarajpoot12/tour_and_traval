@@ -1,0 +1,6 @@
+
+.outer-div{
+padding-left: 0;           /* reset any extra left padding */
+  padding-right: 0;          /* reset any extra right padding */
+  margin: 0 auto;
+  }

@@ -1,0 +1,231 @@
+/* luxurytrains.css */
+
+.luxury-main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bennar {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bennar img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Overlay Styling */
+  .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+  }
+  
+  .banner-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .over-span {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  .over p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .train-list{
+    display: flex;
+  }
+  
+  /* List Styling */
+  .luxury-trais {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 1rem;
+    list-style: none;
+    padding: 20px 0 20px 20px;
+    border: 1px 0px 1px 0px;
+    background-color: linear -gradient(to bottom, #332f2f, #fff);
+  }
+  
+  .luxury-trais li {
+    width: 25%;
+    height: 80px;
+    font-size: 35px;
+    background-color: #ddd;
+    border-radius: 8px;
+  }
+  .zoom-img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .zoom-img:hover {
+    transform: scale(1.2); /* Zoom effect */
+  }
+  .places-wheel {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 110px 110px;
+    background: #f8f4ea;
+    text-align: center;
+  }
+  .verticle{
+    position:absolute;
+    top: 90%;
+  }
+  .maharaja{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background-image: url('/public/images/tourismtype/luxrytrain/list-11.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .btn{
+    background-color: #71282b;
+  }
+  .maharaja-card{
+    
+    margin-top: 150px;
+    width: 400px;
+    height: 450px;
+    background-color:#f8f4ea ;
+    left: 0;
+  }
+  .deccan{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background-image: url('/public/images/tourismtype/luxrytrain/list-22.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .deccan-card{
+    
+    width: 400px;
+    height: 450px;
+    background-color:#f8f4ea ;
+    top: 300%;
+    right: 0;
+  }
+  .golden{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background-image: url('/public/images/tourismtype/luxrytrain/list-33.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .golden-card{
+   
+    width: 400px;
+    height: 450px;
+    background-color:#f8f4ea ;
+    top: 300%;
+    right: 0;
+  }
+  .palace{
+    width: 100%;
+    height: 150vh;
+    background-image: url('/public/images/tourismtype/luxrytrain/list-44.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .palace-card{
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background-color:#f8f4ea ;
+    top: 300%;
+    right: 0;
+  }
+  
+  .buddha{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-image: url('/public/images/tourismtype/luxrytrain/Buddha-Express.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .palace-card{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    background-color:#f8f4ea ;
+    top:0;
+    left: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-heading {
+      font-size: 2rem;
+    }
+  
+    .over p {
+      font-size: 1rem;
+    }
+  
+    .luxury-trais {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .luxury-trais li {
+      width: 60px;
+      height: 60px;
+    }
+    .train-list{
+      flex-direction: column;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .banner-heading {
+      font-size: 1.5rem;
+    }
+  
+    .over p {
+      font-size: 0.9rem;
+    }
+  }
+  
