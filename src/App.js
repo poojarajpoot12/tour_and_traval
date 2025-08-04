@@ -13,6 +13,9 @@ import ProfilePage from './pages/profilepage';
 import Allbookingpage from './pages/allbookingpage';
 import TourDetailPage from './pages/tourdetailspage';
 import SouthIndiaPage from './pages/southindiapage';
+import EastIndiaPage from './pages/eastindiapage';
+import WestIndiaPage from './pages/westindiapage';
+import CentralIndiaPage from './pages/centralindiapage';
 
 
 
@@ -33,7 +36,10 @@ function App() {
       <Route path='/profile' element={<ProfilePage/>}/>
       <Route path='/allbooking' element={<Allbookingpage/>}/>
       <Route path='/tourdetails/${pkg._id}' element={<TourDetailPage/>} />
-      <Route path='/southpackage'element={<SouthIndiaPage/>}/>
+      <Route path='/southindia'element={<SouthIndiaPage/>}/>
+      <Route path='/eastindia'element={<EastIndiaPage/>}/>
+      <Route path='/westindia' element={<WestIndiaPage/>}/>
+      <Route path='/centralindia' element={<CentralIndiaPage/>}/>
       
       
     </Routes>

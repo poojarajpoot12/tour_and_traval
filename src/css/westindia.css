@@ -1,0 +1,203 @@
+.west-india-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Top Section */
+.top-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffe5b4;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.category-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  color: #555;
+}
+
+.category-card button {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-card button:hover {
+  background-color: blueviolet;
+}
+
+@media (max-width: 768px) {
+  .category-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card {
+    width: 100%;
+  }
+}
+
+/* Packages Section */
+
+.category-card:hover {
+  transform: scale(1.02);
+}
+
+.category-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.category-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.see-more-button {
+  padding: 0.6rem 1.2rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: blueviolet;
+}
+
+/* Packages Section */
+.packages-section {
+  margin-top: 2rem;
+}
+
+.package-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.package-card {
+  flex: 1 1 260px;
+  max-width: 300px;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.package-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+  height: 50px;
+  overflow: hidden;
+}
+
+.package-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0c8f55;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .category-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .see-more-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .package-title {
+    font-size: 1.5rem;
+  }
+
+  .package-desc {
+    height: auto;
+  }
+}

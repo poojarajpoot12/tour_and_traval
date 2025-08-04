@@ -65,10 +65,10 @@ const Nav = () => {
           <div className="dropdown">
             <ul className='navlinks'>
               <li><a onClick={() => navigate('/northindia')}>North India</a></li><br />
-              <li><a onClick={()=>navigate('/southpackage')}>South India</a></li><br />
-              <li><a>East India</a></li><br />
-              <li><a>West India</a></li><br />
-              <li><a>Central India</a></li>
+              <li><a onClick={()=>navigate('/southindia')}>South India</a></li><br />
+              <li><a onClick={()=>navigate('/eastindia')}>East India</a></li><br />
+              <li><a onClick={()=>navigate('/westindia')}>West India</a></li><br />
+              <li><a onClick={()=>navigate('/centralindia')}>Central India</a></li>
             </ul>
           </div>
         )}
